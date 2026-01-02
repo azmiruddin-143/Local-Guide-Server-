@@ -10,6 +10,7 @@ import { envVars } from '../config/env';
 import AppError from '../errorHelpers/AppError';
 
 export const globalErrorHandler = async (
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   err: any,
   req: Request,
   res: Response,
